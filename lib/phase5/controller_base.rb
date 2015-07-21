@@ -7,6 +7,7 @@ module Phase5
 
     # setup the controller
     def initialize(req, res, route_params = {})
+      @params = URI::decode_www_for(req.query_string) || route_params
     end
   end
 end
