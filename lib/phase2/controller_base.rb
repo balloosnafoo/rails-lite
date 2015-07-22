@@ -9,7 +9,7 @@ module Phase2
 
     # Helper method to alias @already_built_response
     def already_built_response?
-      @already_built_response
+      @already_built_response || false
     end
 
     # Set the response status code and header
